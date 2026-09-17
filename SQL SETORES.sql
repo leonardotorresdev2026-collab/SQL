@@ -33,10 +33,14 @@ insert into SETORES(ID_SETOR,NUM_SETOR, LOCAL, NOME) values
 (10,'176','corredor 176','trabalhista');
 
 
-insert into FUNCIONARIOS(ID_FUNCIONARIO,NOME_FUNCIONARIO, GENERO,SALARIO,CPF,MANAGER_ID,SETOR_ID) values 
-('A Revolução dos Bichos',' George Owel',1945),
-('O senhor dos Aneis',' J. R. R. Tolken',1954),
-('Memorias Postumas de Bras Cubas',' Machado de Assis',1981),
-('Capitães de Areia',' Jorge Amado',1945),
-('Vidas Secas',' Graciliano Ramos',1945);
-
+insert into FUNCIONARIOS (ID_FUNCIONARIO,NOME_FUNCIONARIO,GENERO,SALARIO,CPF,MANAGER_ID,SETOR_ID) values
+(1,'bersi','nao informado',3000,'11111111111',1,1),
+(2,'thomas','masculino',3100,'22222222222',1,2),
+(3,'leonardo','masculino',3200,'33333333333',1,3),
+(4,'estevan','masculino',3300,'44444444444',1,4),
+(5,'camila','feminino',3400,'55555555555',2,5),
+(6,'miti','feminino',3500,'66666666666',2,6),
+(7,'marques','nao informado',3600,'77777777777',3,7),
+(8,'isabela','feminino',3700,'88888888888',3,8),
+(9,'felipe','masculino',3800,'99999999999',4,9),
+(10,'bessa','nao informado',3900,'10101010101',4,10);
