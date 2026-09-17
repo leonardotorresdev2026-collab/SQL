@@ -41,13 +41,50 @@ CREATE TABLE CONSULTA (
     CONSTRAINT FK_CONSULTA_DOCTOR FOREIGN KEY (DOCTOR_ID) REFERENCES DOCTORS(ID_DOCTOR)
 );
 
-insert into MOTHERS(NOME,ENEDERECO,TELEFONE,DATE_OF_BIRTH) values 
-('AMANDA',' RUA SETE DE NOVEMBRO',1945),
-('O senhor dos Aneis',' J. R. R. Tolken',1954),
-('Memorias Postumas de Bras Cubas',' Machado de Assis',1981),
-('Capitães de Areia',' Jorge Amado',1945),
-('Vidas Secas',' Graciliano Ramos',1945);
+insert into MOTHERS (ID,NOME,ENDERECO,TELEFONE,DATE_OF_BIRTH) values
+(1,'amanda','rua 1','111111111','1986-01-10'),
+(2,'camila','rua 2','222222222','1985-01-10'),
+(3,'isabela','rua 3','333333333','1984-01-10'),
+(4,'miti','rua 4','444444444','1983-01-10'),
+(5,'ana','rua 5','555555555','1982-01-10'),
+(6,'maria','rua 6','666666666','1981-01-10'),
+(7,'juliana','rua 7','777777777','1980-01-10'),
+(8,'larissa','rua 8','888888888','1979-01-10'),
+(9,'beatriz','rua 9','999999999','1978-01-10'),
+(10,'fernanda','rua 10','101010101','1977-01-10');
 
+insert into BABIES (ID,NOME,DATE_OF_BIRTH,BIRTH_WEIGHT,HEIGHT,MOTHER_ID) values
+(1,'leo','2026-01-01',3.2,50,1),
+(2,'theo','2026-01-02',3.1,49,2),
+(3,'alice','2026-01-03',3.4,51,3),
+(4,'enzo','2026-01-04',3.0,48,4),
+(5,'lara','2026-01-05',3.3,50,5),
+(6,'davi','2026-01-06',3.5,52,6),
+(7,'sofia','2026-01-07',3.2,49,7),
+(8,'miguel','2026-01-08',3.6,51,8),
+(9,'luiza','2026-01-09',3.1,50,9),
+(10,'arthur','2026-01-10',3.4,52,10);
 
+insert into DOCTORS (ID_DOCTOR,CRM,NOME,TELEFONE,ESPECIALIDADE) values
+(1,'crm001','bersi','111111111','pediatria'),
+(2,'crm002','thomas','222222222','pediatria'),
+(3,'crm003','leonardo','333333333','cardiologia'),
+(4,'crm004','estevan','444444444','pediatria'),
+(5,'crm005','marques','555555555','neurologia'),
+(6,'crm006','felipe','666666666','pediatria'),
+(7,'crm007','bessa','777777777','ortopedia'),
+(8,'crm008','carlos','888888888','pediatria'),
+(9,'crm009','joao','999999999','cardiologia'),
+(10,'crm010','pedro','101010101','pediatria');
 
-
+insert into CONSULTA (BABY_ID,DOCTOR_ID,SERVICE_DATE,SERVICE_TIME) values
+(1,1,'2026-02-01','08:00:00'),
+(2,2,'2026-02-02','09:00:00'),
+(3,3,'2026-02-03','10:00:00'),
+(4,4,'2026-02-04','11:00:00'),
+(5,5,'2026-02-05','12:00:00'),
+(6,6,'2026-02-06','13:00:00'),
+(7,7,'2026-02-07','14:00:00'),
+(8,8,'2026-02-08','15:00:00'),
+(9,9,'2026-02-09','16:00:00'),
+(10,10,'2026-02-10','17:00:00');
