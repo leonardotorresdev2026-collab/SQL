@@ -37,3 +37,52 @@ CREATE TABLE PRODUTOSCOMPRADOS (
     CONSTRAINT FK_PRODUTOSCOMPRADOS_PRODUTO FOREIGN KEY (ID_PRODUTO) 
         REFERENCES PRODUTO(ID_PRODUTO)
 );
+
+
+insert into CONSUMIDOR (ID_CONSUMIDOR,NOME,TELEFONE,ENDEREÇO) values
+(1,'bersi','111111111','rua 1'),
+(2,'thomas','222222222','rua 2'),
+(3,'leonardo','333333333','rua 3'),
+(4,'estevan','444444444','rua 4'),
+(5,'camila','555555555','rua 5'),
+(6,'miti','666666666','rua 6'),
+(7,'marques','777777777','rua 7'),
+(8,'isabela','888888888','rua 8'),
+(9,'felipe','999999999','rua 9'),
+(10,'bessa','101010101','rua 10');
+
+insert into PRODUTO (ID_PRODUTO,NOME_PRODUTO,TIPO,PRECO_UNITARIO) values
+(1,'arroz','alimento',25.00),
+(2,'feijao','alimento',10.00),
+(3,'macarrao','alimento',8.00),
+(4,'leite','bebida',6.00),
+(5,'cafe','bebida',18.00),
+(6,'acucar','alimento',5.00),
+(7,'oleo','alimento',7.00),
+(8,'biscoito','alimento',4.00),
+(9,'sabonete','higiene',3.00),
+(10,'detergente','limpeza',2.50);
+
+insert into COMPRADOS (ID,ID_CONSUMIDOR,DATA_COMPRA,VALOR_TOTAL) values
+(1,1,'2026-09-01 10:00',50.00),
+(2,2,'2026-09-02 11:00',30.00),
+(3,3,'2026-09-03 12:00',8.00),
+(4,4,'2026-09-04 13:00',24.00),
+(5,5,'2026-09-05 14:00',36.00),
+(6,6,'2026-09-06 15:00',25.00),
+(7,7,'2026-09-07 16:00',21.00),
+(8,8,'2026-09-08 17:00',16.00),
+(9,9,'2026-09-09 18:00',6.00),
+(10,10,'2026-09-10 19:00',10.00);
+
+insert into PRODUTOSCOMPRADOS (ID_COMPRA,COMPRA_ID,ID_PRODUTO,QUANTIDADE) values
+(1,1,1,2),
+(2,2,2,3),
+(3,3,3,1),
+(4,4,4,4),
+(5,5,5,2),
+(6,6,6,5),
+(7,7,7,3),
+(8,8,8,4),
+(9,9,9,2),
+(10,10,10,4);
